@@ -1,8 +1,8 @@
 const path = require('path')
-const Plugins = require('./plugin')
+const Plugins = require('./dist/plugin').default
 
 module.exports = {
-  context: path.resolve(__dirname, './src'),
+  context: path.resolve(__dirname, './src/__tests__'),
   devtool: 'inline-source-map',
   entry: {
     index: './index.js'
